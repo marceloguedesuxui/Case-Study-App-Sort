@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort App - UX/UI Case Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/logotop.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <div class="scroll-progress"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Sort">
+        </div>
+        <div class="menu-icon">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="#overview">O Desafio</a>
+            <a href="#process">Processos</a>
+            <a href="#research">Pesquisas</a>
+            <a href="#definition">Personas</a>
+            <a href="#design">Design</a>
+            <a href="#results">Conclusões</a>
+        </div>
+        <a href="#prototype" class="btn-primary">2025</a>
+    </nav>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="hero" class="hero-section">
+            <div class="container grid-2-col hero-grid">
+                <div class="hero-content">
+                    <span class="tag">UX/UI Case Study</span>
+                    <h1>Organize sua vida home office com o App <span>Sort.</span></h1>
+                    <p>Um aplicativo desenvolvido para ajudar profissionais remotos a separarem a vida pessoal da
+                        profissional.</p>
+                </div>
+                <div class="hero-image-container">
+                    <!-- Cards flutuantes -->
+                    <div class="feature-card card-colab">
+                        <div class="f-card-content">
+                            <h3>Colaboração</h3>
+                            <p>Compartilhe suas ideias e opiniões em grupos</p>
+                        </div>
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </div>
+
+                    <div class="feature-card card-meet">
+                        <div class="f-card-content">
+                            <h3>Reunião</h3>
+                            <p>Marque suas reuniões com a sua equipe</p>
+                        </div>
+                        <i class="ph-bold ph-arrow-left"></i>
+                    </div>
+
+                    <div class="feature-card card-room">
+                        <div class="f-card-content">
+                            <h3>Sala virtual</h3>
+                            <p>Serve para conectar pessoas</p>
+                        </div>
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </div>
+
+                    <div class="feature-card card-agenda">
+                        <i class="ph-bold ph-arrow-left"></i>
+                        <div class="f-card-content">
+                            <h3>Agenda Pessoal</h3>
+                            <p>Um só lugar para você gerenciar o trabalho</p>
+                        </div>
+                    </div>
+
+                    <img src="img/mockupsort-01.png" alt="Sort App Interface Mockup" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contexto / Visão Geral -->
+        <section id="overview" class="section overview-section">
+            <div class="container grid-2-col">
+                <div class="card glass-card slide-in-left">
+                    <h3>O Problema</h3>
+                    <p>Com o aumento do trabalho remoto, muitas pessoas têm dificuldade em estabelecer limites claros
+                        entre o trabalho e a vida pessoal, levando a esgotamento, desorganização e falta de foco.</p>
+                </div>
+                <div class="card glass-card slide-in-right">
+                    <h3>A Solução</h3>
+                    <p>O App Sort é uma ferramenta de gestão de tarefas inteligente que adapta sua interface e
+                        notificações
+                        com base no seu horário de trabalho, ajudando você a se desconectar quando necessário.</p>
+                </div>
+            </div>
+            <div class="roles-tools">
+                <div class="role-item">
+                    <h4>Minha Função</h4>
+                    <p>UX/UI Designer</p>
+                </div>
+                <div class="role-item">
+                    <h4>Duração</h4>
+                    <p>4 Semanas</p>
+                </div>
+                <div class="role-item">
+                    <h4>Ferramentas</h4>
+                    <div class="tools-icons">
+                        <i class="ph ph-figma-logo"></i>
+                    </div>
+                </div>
+                <div class="role-item">
+                    <h4>Plataforma</h4>
+                    <p>App (iOS/Android)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Processo -->
+        <section id="process" class="section process-section">
+            <div class="container">
+                <h2 class="section-title">Design Thinking</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <a href="#research" class="step-link">
+                            <div class="step-icon"><i class="ph ph-magnifying-glass"></i></div>
+                            <span>Empatia</span>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <a href="#trends" class="step-link">
+                            <div class="step-icon"><i class="ph ph-users"></i></div>
+                            <span>Definição</span>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <a href="#how-might-we" class="step-link">
+                            <div class="step-icon"><i class="ph ph-lightbulb"></i></div>
+                            <span>Ideação</span>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <a href="#design" class="step-link">
+                            <div class="step-icon"><i class="ph ph-paint-brush"></i></div>
+                            <span>Prototipação</span>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <a href="#results" class="step-link">
+                            <div class="step-icon"><i class="ph ph-check-circle"></i></div>
+                            <span>Teste</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Pesquisa -->
+        <section id="research" class="section research-section">
+            <div class="container">
+                <h2 class="section-title">Pesquisas e Descobertas</h2>
+
+                <div class="desk-research">
+                    <div class="methodology-card glass-card">
+                        <h3><i class="ph ph-magnifying-glass"></i> Metodologia</h3>
+                        <p>Utilizei formulários online como principal ferramenta de pesquisa para compreender o
+                            comportamento,
+                            as necessidades e os desafios de profissionais que trabalham remotamente.</p>
+                        <div class="methods-grid">
+                            <div class="method-item"><strong>Desk Research</strong>
+                                <p>Análise de artigos e conteúdos de
+                                    referência
+                                    para complementar os dados coletados e garantir alinhamento com boas práticas de UX
+                                    Design.</p>
+                            </div>
+                            <div class="method-item"><strong>Pesquisa Quantitativa</strong>
+                                <p>Formulário estruturado
+                                    aplicado a 25 profissionais remotos, para
+                                    identificar frequência de uso e principais dificuldades no dia a dia de trabalho.
+                                </p>
+                            </div>
+                            <div class="method-item"><strong>Pesquisa Qualitativa</strong>
+                                <p>Perguntas abertas incluídas no
+                                    formulário para coletar opiniões
+                                    e percepções dos usuários sobre produtividade, organização e gestão de tarefas no
+                                    home
+                                    office.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Contexto de Mercado -->
+                    <div class="research-block">
+                        <h3 class="highlight-title">Cenário: Trabalho Remoto no Brasil (2018-2023)</h3>
+                        <div class="timeline-container">
+                            <div class="timeline-card">
+                                <div class="year-badge">2018</div>
+                                <div class="timeline-content">
+                                    <strong>3,8 milhões</strong>
+                                    <p>Apenas 3,8% da população ocupada trabalhava remotamente.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="year-badge highlight">2020</div>
+                                <div class="timeline-content">
+                                    <strong>8,2 milhões</strong>
+                                    <p>Salto para 11% durante a pandemia, quase triplicando o número.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="year-badge">2022</div>
+                                <div class="timeline-content">
+                                    <strong>9,5 milhões</strong>
+                                    <p>Mesmo com a retomada presencial, o número subiu para 9,8%.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="year-badge">2023</div>
+                                <div class="timeline-content">
+                                    <strong>8,3%</strong>
+                                    <p>Leve queda, mas o modelo se consolidou como forte opção.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloco Quantitativo -->
+                    <div class="research-block">
+                        <h3 class="highlight-title">Pesquisa Quantitativa</h3>
+                        <div class="stats-grid grid-2-col">
+                            <!-- Cartão 1 -->
+                            <div class="stat-card detailed-card">
+                                <h4>Qual a principal dificuldade em manter a produtividade no trabalho remoto? <p>
+                                        Resposta multiplas</p>
+                                </h4>
+                                <div class="stat-rows">
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Distrações em casa</span> <span>48%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="48%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Dificuldade de foco</span> <span>42%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="42%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Excesso de reuniões</span> <span>35%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="35%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Falta de limites</span> <span>30%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Procrastinação</span> <span>30%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="30%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="analysis-text">Análise: As distrações e a dificuldade de manter o foco são os
+                                    maiores entraves, indicando a necessidade de ferramentas que auxiliem no
+                                    gerenciamento do tempo.</p>
+                            </div>
+
+                            <!-- Cartão 2 -->
+                            <div class="stat-card detailed-card">
+                                <h4>Com que frequência está trabalhando mais horas do que o habitual?</h4>
+                                <div class="stat-rows">
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Frequentemente</span> <span>40%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="40%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Às vezes</span> <span>35%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="35%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Sempre</span> <span>15%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="15%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Raramente</span> <span>8%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="8%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Nunca</span> <span>2%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="2%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="analysis-text">Análise: O dado reforça que o "blurring" das fronteiras entre
+                                    trabalho e vida pessoal é uma realidade para a maioria, levando a horas extras.</p>
+                            </div>
+
+                            <!-- Cartão 3 -->
+                            <div class="stat-card detailed-card">
+                                <h4>Quantas pausas significativas você consegue fazer para descontrair?</h4>
+                                <div class="stat-rows">
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Nenhuma a uma</span> <span>50%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Duas a três</span> <span>35%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="35%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Quatro a cinco</span> <span>10%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="10%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Mais de cinco</span> <span>5%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="5%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="analysis-text">Análise: Metade dos trabalhadores remotos não consegue fazer
+                                    pausas regulares, o que impacta diretamente na saúde e no foco.</p>
+                            </div>
+
+                            <!-- Cartão 4 -->
+                            <div class="stat-card detailed-card">
+                                <h4>A Importância de funcionalidades para promover seu bem-estar?</h4>
+                                <div class="stat-rows">
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Extremamente importante</span> <span>70%</span>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="70%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Muito importante</span> <span>25%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="25%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Moderadamente</span> <span>4%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="4%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-row">
+                                        <div class="row-label"><span>Pouco importante</span> <span>1%</span></div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" data-target="1%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="analysis-text">Análise: A esmagadora maioria (95%) considera funcionalidades
+                                    de bem-estar cruciais, alinhando-se à tendência de priorizar saúde mental.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloco Qualitativo -->
+                    <div class="research-block">
+                        <h3 class="highlight-title">Pesquisa Qualitativa e Insights</h3>
+                        <div class="qualitative-grid grid-2-col">
+                            <div class="insights-list styled-card">
+                                <h4 class="card-title">Principais Dores</h4>
+                                <div class="pain-points-grid">
+                                    <div class="pain-point-row">
+                                        <div class="pp-icon"><i class="ph ph-warning-circle"></i></div>
+                                        <div class="pp-content">
+                                            <div class="pp-header">Falta de Separação Física:</div>
+                                            <div class="pp-desc">Sem o deslocamento, o cérebro não "vira a chave" para o
+                                                modo descanso.</div>
+                                        </div>
+                                    </div>
+                                    <div class="pain-point-row">
+                                        <div class="pp-icon"><i class="ph ph-warning-circle"></i></div>
+                                        <div class="pp-content">
+                                            <div class="pp-header">Ansiedade de Performance:</div>
+                                            <div class="pp-desc">Medo de parecer improdutivo leva ao "presenteísmo
+                                                digital".
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pain-point-row">
+                                        <div class="pp-icon"><i class="ph ph-warning-circle"></i></div>
+                                        <div class="pp-content">
+                                            <div class="pp-header">Caos de Notificações:</div>
+                                            <div class="pp-desc">O excesso de canais (microsoft teams, whatsapp, email)
+                                                gera
+                                                fadiga
+                                                cognitiva.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-voice">
+                                <h4><i class="ph ph-chat-centered-text"></i> Voz do Usuário</h4>
+                                <div class="quote-card">
+                                    <p>"Eu sinto que estou sempre devendo horas de trabalho, mesmo quando já trabalhei
+                                        10 horas no dia. Não consigo relaxar assistindo uma série sem checar o celular."
+                                    </p>
+                                    <span>- Felipe, Designer Sênior</span>
+                                </div>
+                                <div class="quote-card" style="margin-top: 1rem;">
+                                    <p>"Minha mesa de jantar virou meu escritório. Quando vou jantar, ainda vejo meu
+                                        notebook e lembro dos emails não lidos."</p>
+                                    <span>- Fernando, Analista de Dados</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Matriz CSD -->
+                    <div class="research-block csd-section">
+                        <h3 class="highlight-title">Matriz CSD</h3>
+                        <div class="csd-grid">
+                            <!-- Coluna Certeza -->
+                            <div class="csd-column">
+                                <h4 class="csd-header">Certeza</h4>
+                                <div class="csd-cards">
+                                    <div class="csd-card csd-blue">
+                                        <p>Profissionais em home office precisam de ajuda para organizar tarefas e
+                                            rotinas.</p>
+                                    </div>
+                                    <div class="csd-card csd-blue">
+                                        <p>Há aumento de distrações e dificuldades em manter a produtividade no trabalho
+                                            remoto.</p>
+                                    </div>
+                                    <div class="csd-card csd-blue">
+                                        <p>Usuários valorizam funcionalidades como registro de ponto, dicas de bem-estar
+                                            e controle de tarefas.</p>
+                                    </div>
+                                    <div class="csd-card csd-blue">
+                                        <p>O design precisa ser responsivo e funcionar bem em dispositivos móveis.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coluna Suposições -->
+                            <div class="csd-column">
+                                <h4 class="csd-header">Suposições</h4>
+                                <div class="csd-cards">
+                                    <div class="csd-card csd-red">
+                                        <p>O público-alvo prefere uma linguagem informal e acolhedora no aplicativo.</p>
+                                    </div>
+                                    <div class="csd-card csd-red">
+                                        <p>Ter uma área de insights semanais pode melhorar a sensação de progresso.</p>
+                                    </div>
+                                    <div class="csd-card csd-red">
+                                        <p>Recursos de gamificação (badges, metas diárias) aumentariam o engajamento.
+                                        </p>
+                                    </div>
+                                    <div class="csd-card csd-red">
+                                        <p>Profissionais autônomos são o principal segmento de usuários.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coluna Dúvidas -->
+                            <div class="csd-column">
+                                <h4 class="csd-header">Dúvidas</h4>
+                                <div class="csd-cards">
+                                    <div class="csd-card csd-purple">
+                                        <p>Quais funcionalidades são realmente indispensáveis no dia a dia do usuário?
+                                        </p>
+                                    </div>
+                                    <div class="csd-card csd-purple">
+                                        <p>Os usuários querem personalizar os fluxos e rotinas dentro do app?</p>
+                                    </div>
+                                    <div class="csd-card csd-purple">
+                                        <p>O app deve ter uma versão desktop/web ou manter-se apenas como mobile?</p>
+                                    </div>
+                                    <div class="csd-card csd-purple">
+                                        <p>Qual é o nível ideal de notificações para manter o engajamento sem gerar
+                                            incômodo?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Desafios do Trabalho Remoto -->
+                    <div class="research-block challenges-section-container">
+                        <div class="challenges-grid">
+                            <div class="challenges-content">
+                                <h3 class="challenges-title">Principais desafios no ambiente de <span>trabalho
+                                        remoto</span> que impactam a experiência <span>dos colaboradores</span></h3>
+                                <div class="challenges-illustration">
+                                    <img src="img/focoremoto-1.png" alt="Ilustração Desafios">
+                                </div>
+                            </div>
+                            <div class="challenges-list">
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">!</div>
+                                    <p>A produtividade, por perda de tempo em comunicações descentralizadas.</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">!</div>
+                                    <p>O engajamento, por falta de interação real entre os colaboradores.</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">!</div>
+                                    <p>A organização, por agendas e tarefas espalhadas em múltiplas ferramentas.</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">!</div>
+                                    <p>A eficiência, por reuniões mal coordenadas e ausência de registro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloco de Mercado -->
+                    <div class="research-block">
+                        <h3 class="highlight-title">Análise de Mercado</h3>
+                        <div class="market-trends">
+                            <div class="market-summary">
+                                <div class="summary-header">
+                                    <div class="summary-growth">
+                                        <span>+40% de Crescimento</span>
+                                    </div>
+                                    <h4>Tendências e Oportunidades</h4>
+                                </div>
+                                <p>O mercado de ferramentas de produtividade cresceu expressivamente, mas a maioria
+                                    ainda foca apenas no volume de entrega. Identificamos uma lacuna crítica para
+                                    soluções que priorizam o <strong>bem-estar e a qualidade do trabalho</strong>.</p>
+                            </div>
+
+                            <div class="trends-grid">
+                                <div class="trend-card">
+                                    <i class="ph ph-magic-wand"></i>
+                                    <h5>Automação</h5>
+                                    <p>Redução da carga cognitiva em tarefas repetitivas.</p>
+                                </div>
+                                <div class="trend-card highlight">
+                                    <i class="ph ph-leaf"></i>
+                                    <h5>Bem-estar</h5>
+                                    <p>Funcionalidades que incentivam pausas e desconexão.</p>
+                                </div>
+                                <div class="trend-card">
+                                    <i class="ph ph-stack"></i>
+                                    <h5>All-in-one</h5>
+                                    <p>Centralização para evitar troca de contexto constante.</p>
+                                </div>
+                                <div class="trend-card">
+                                    <i class="ph ph-game-controller"></i>
+                                    <h5>Gamificação</h5>
+                                    <p>Recompensas visuais por progresso e saúde mental.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benchmarking">
+                    <h2 class="section-title">Benchmarking</h2>
+                    <p>Analisei os principais concorrentes diretos e indiretos para entender o que já está sendo feito e
+                        onde estão as oportunidades.</p>
+                    <div class="competitor-cards">
+                        <!-- Concorrente 1 -->
+                        <div class="comp-card">
+                            <div class="comp-header">
+                                <h4>Notion</h4>
+                            </div>
+                            <ul class="pros">
+                                <li>Flexibilidade total</li>
+                                <li>Centraliza tudo</li>
+                            </ul>
+                            <ul class="cons">
+                                <li>Curva de aprendizado alta</li>
+                                <li>Complexo para mobile</li>
+                            </ul>
+                        </div>
+                        <!-- Concorrente 2 -->
+                        <div class="comp-card">
+                            <div class="comp-header">
+                                <i class="fa-solid fa-square-check"></i>
+                                <h4>Todoist</h4>
+                            </div>
+                            <ul class="pros">
+                                <li>Simples e rápido</li>
+                                <li>Linguagem natural</li>
+                            </ul>
+                            <ul class="cons">
+                                <li>Recursos pagos</li>
+                                <li>Visual pouco inspirador</li>
+                            </ul>
+                        </div>
+                        <!-- Concorrente 3 (Trello) -->
+                        <div class="comp-card">
+                            <div class="comp-header">
+                                <i class="fa-brands fa-trello"></i>
+                                <h4>Trello</h4>
+                            </div>
+                            <ul class="pros">
+                                <li>Visual Kanban intuitivo</li>
+                                <li>Bom para equipes</li>
+                            </ul>
+                            <ul class="cons">
+                                <li>Limitado na versão free</li>
+                                <li>Pouca visão de calendário</li>
+                            </ul>
+                        </div>
+                        <!-- Concorrente 4 (Microsoft To Do) -->
+                        <div class="comp-card">
+                            <div class="comp-header">
+                                <i class="fa-brands fa-microsoft"></i>
+                                <h4>Microsoft To Do</h4>
+                            </div>
+                            <ul class="pros">
+                                <li>Integração Office 365</li>
+                                <li>Lista "Meu Dia"</li>
+                            </ul>
+                            <ul class="cons">
+                                <li>Pouca personalização</li>
+                                <li>Funcionalidades básicas</li>
+                            </ul>
+                        </div>
+                        <!-- Concorrente 5 (Evernote) -->
+                        <div class="comp-card">
+                            <div class="comp-header">
+                                <i class="fa-brands fa-evernote"></i>
+                                <h4>Evernote</h4>
+                            </div>
+                            <ul class="pros">
+                                <li>Ótimo para anotações</li>
+                                <li>Web Clipper poderoso</li>
+                            </ul>
+                            <ul class="cons">
+                                <li>Caro para recursos Pro</li>
+                                <li>Ficou lento com o tempo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trends-research" id="trends">
+                    <h2 class="section-title">Estudo de Tendências e Produtividade<br>no Trabalho Remoto</h2>
+
+                    <div class="trends-grid">
+                        <!-- Coluna 1 -->
+                        <div class="trend-column">
+                            <div class="trend-column-header">
+                                <div class="trend-icon-bulb"><i class="ph ph-lightbulb"></i></div>
+                                <h4>Autonomia e Flexibilidade impulsionam a produtividade</h4>
+                            </div>
+                            <div class="trend-cards-stack">
+                                <div class="trend-card">
+                                    <p>76% dos profissionais dizem ser mais produtivos em casa do que no escritório.</p>
+                                </div>
+                                <div class="trend-card">
+                                    <p>A autonomia para organizar horários tem impacto direto no foco e entrega de
+                                        tarefas.
+                                    </p>
+                                </div>
+                                <div class="trend-card">
+                                    <p>Tendência crescente de adoção do modelo "async-first" (comunicação assíncrona
+                                        como
+                                        padrão).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coluna 2 -->
+                        <div class="trend-column">
+                            <div class="trend-column-header">
+                                <div class="trend-icon-bulb"><i class="ph ph-lightbulb"></i></div>
+                                <h4>Ambiente físico e mental são fatores-chave</h4>
+                            </div>
+                            <div class="trend-cards-stack">
+                                <div class="trend-card">
+                                    <p>Profissionais que têm um espaço dedicado ao trabalho em casa relatam 24% mais
+                                        produtividade.</p>
+                                </div>
+                                <div class="trend-card">
+                                    <p>Questões como ruído, iluminação e ergonomia impactam diretamente a performance.
+                                    </p>
+                                </div>
+                                <div class="trend-card">
+                                    <p>Há aumento no uso de apps de foco e técnicas como Pomodoro ou time-blocking.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coluna 3 -->
+                        <div class="trend-column">
+                            <div class="trend-column-header">
+                                <div class="trend-icon-bulb"><i class="ph ph-lightbulb"></i></div>
+                                <h4>Fadiga de reuniões e sobrecarga digital</h4>
+                            </div>
+                            <div class="trend-cards-stack">
+                                <div class="trend-card">
+                                    <p>64% dos entrevistados sentem que participam de mais reuniões desnecessárias no
+                                        home
+                                        office.</p>
+                                </div>
+                                <div class="trend-card">
+                                    <p>O conceito de "Zoom Fatigue" segue em alta, empresas estão testando semanas sem
+                                        reuniões.</p>
+                                </div>
+                                <div class="trend-card">
+                                    <p>Profissionais que praticam atividades de autocuidado relatam até 2h a mais de
+                                        foco
+                                        por dia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--Personas-->
+        <section id="definition" class="section definition-section">
+            <div class="container">
+                <h2 class="section-title">Personas</h2>
+                <div class="personas-grid">
+                    <div class="persona-card glass-card">
+                        <div class="persona-header">
+                            <div class="avatar-placeholder">
+                                <img src="img/Pesona-01.png" alt="Avatar">
+                            </div>
+                            <div class="persona-info">
+                                <h3>Eduardo, 28 anos</h3>
+                                <p>Desenvolvedor Full Stack • Trabalha Remoto</p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <div class="biography">
+                                <h4>Bio</h4>
+                                <p>"Eu amo a liberdade do home office, mas às vezes sinto que estou vivendo no trabalho.
+                                    Preciso de algo que me diga 'pare' quando o dia acaba."</p>
+                            </div>
+                            <div class="pain-points">
+                                <h4>Dores e Necessidades</h4>
+                                <ul>
+                                    <li>Difícil separar lazer de trabalho no mesmo ambiente.</li>
+                                    <li>Notificações constantes de apps de trabalho à noite.</li>
+                                    <li>Precisa de uma rotina visual clara.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="persona-card glass-card">
+                        <div class="persona-header">
+                            <div class="avatar-placeholder">
+                                <img src="img/Persona-02.png" alt="Avatar">
+                            </div>
+
+                            <div class="persona-info">
+                                <h3>Ana, 34 anos</h3>
+                                <p>Gerente de Projetos • Híbrido</p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <div class="biography">
+                                <h4>Bio</h4>
+                                <p>"Em casa, tudo vira distração. A louça, o cachorro, as notificações... Preciso de um
+                                    método que me ajude a focar em blocos de tempo e visualizar meu progresso diário."
+                                </p>
+                            </div>
+                            <div class="pain-points">
+                                <h4>Dores e Necessidades</h4>
+                                <ul>
+                                    <li>Sente falta da estrutura rígida do escritório.</li>
+                                    <li>Procrastinação por falta de supervisão direta.</li>
+                                    <li>Precisa de gamificação para se manter motivada.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Jornada do Usuário -->
+        <section id="user-journey" class="section journey-section">
+            <div class="container">
+                <h2 class="section-title">Jornada do Usuário</h2>
+
+                <div class="journey-wrapper glass-card">
+                    <div class="journey-grid">
+                        <div class="journey-row labels-row">
+                            <div class="journey-label side-label">Etapa da Jornada</div>
+                            <div class="journey-col"><span class="step-badge">Acesso ao App</span></div>
+                            <div class="journey-col"><span class="step-badge">Localização da Função</span></div>
+                            <div class="journey-col"><span class="step-badge">Agendamento</span></div>
+                            <div class="journey-col"><span class="step-badge">Confirmação</span></div>
+                            <div class="journey-col"><span class="step-badge">Acompanhamento</span></div>
+                        </div>
+
+                        <div class="journey-row content-row">
+                            <div class="journey-label side-label">Ação do Usuário</div>
+                            <div class="journey-col">
+                                <div class="journey-card">Abre o aplicativo SORT</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card">Encontra o botão/menu "Reuniões"</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card">Preenche dados da reunião (data, horário, link, título)</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card">Confirma o agendamento</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card">Visualiza ou edita reuniões agendadas</div>
+                            </div>
+                        </div>
+
+                        <div class="journey-row content-row">
+                            <div class="journey-label side-label">Pensamento</div>
+                            <div class="journey-col">
+                                <div class="journey-card thinking-card">Preciso marcar uma reunião</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card thinking-card">Está fácil de achar essa opção?</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card thinking-card">Está rápido de preencher tudo?</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card thinking-card">Será que salvou mesmo?</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card thinking-card">Quero revisar meus compromissos</div>
+                            </div>
+                        </div>
+
+                        <div class="journey-row sentiment-row">
+                            <div class="journey-label side-label">Sentimento</div>
+                            <div class="sentiment-container">
+                                <svg class="mood-path" viewBox="0 0 1000 120" preserveAspectRatio="none">
+                                    <path d="M 100,80 Q 300,10 400,50 T 900,20" fill="none"
+                                        stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="5,5" />
+                                </svg>
+                                <div class="journey-col">
+                                    <div class="mood-item">
+                                        <div class="emoji">😐</div>
+                                        <span>Pressa</span>
+                                    </div>
+                                </div>
+                                <div class="journey-col">
+                                    <div class="mood-item">
+                                        <div class="emoji">😊</div>
+                                        <span>Confiança</span>
+                                    </div>
+                                </div>
+                                <div class="journey-col">
+                                    <div class="mood-item">
+                                        <div class="emoji">🤓</div>
+                                        <span>Concentração</span>
+                                    </div>
+                                </div>
+                                <div class="journey-col">
+                                    <div class="mood-item">
+                                        <div class="emoji">😅</div>
+                                        <span>Alívio e controle</span>
+                                    </div>
+                                </div>
+                                <div class="journey-col">
+                                    <div class="mood-item">
+                                        <div class="emoji">😁</div>
+                                        <span>Tranquilidade</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-row content-row">
+                            <div class="journey-label side-label">Destaques da Experiência</div>
+                            <div class="journey-col">
+                                <div class="journey-card highlight-card">Acesso rápido, login persistente</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card highlight-card">Ícone visível no dashboard, navegação direta
+                                </div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card highlight-card">Formulário objetivo</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card highlight-card">Feedback visual imediato</div>
+                            </div>
+                            <div class="journey-col">
+                                <div class="journey-card highlight-card">Histórico organizado com filtros e busca</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção How Might We -->
+        <section id="how-might-we" class="section hmw-section">
+            <div class="container">
+                <h2 class="section-title">How Might We</h2>
+                <div class="hmw-wrapper">
+                    <div class="hmw-card glass-card">
+                        <div class="hmw-content">
+                            <p class="hmw-question">"Como podemos criar uma solução digital que centralize a gestão de
+                                tarefas e rotinas de profissionais em home office, aumentando produtividade e foco, ao
+                                mesmo tempo em que gera valor contínuo para o usuário e diferenciação para o produto no
+                                mercado?"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Brainstorming -->
+        <section id="brainstorming" class="section brainstorming-section">
+            <div class="container">
+                <h2 class="section-title">Brainstorming</h2>
+                <div class="section-intro">
+                    <p>Com base nos insights da pesquisa e na definição do problema, realizei um brainstorming
+                        individual para explorar possíveis soluções para os desafios enfrentados por profissionais que
+                        trabalham em home office. O objetivo foi gerar o maior número possível de ideias, focando em
+                        melhorar organização, foco e produtividade.</p>
+                </div>
+
+                <div class="brainstorming-grid grid-4-col">
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-list-checks"></i>
+                        <p>Lista de tarefas com priorização visual (urgente, importante, opcional)</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-clock"></i>
+                        <p>Organização de tarefas por blocos de tempo</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-squares-four"></i>
+                        <p>Painel diário com visão clara do que precisa ser feito</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-trend-up"></i>
+                        <p>Indicadores simples de progresso e produtividade</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-bell-ringing"></i>
+                        <p>Alertas inteligentes para ajudar a manter o foco</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-monitor"></i>
+                        <p>Interface minimalista para reduzir distrações</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-fingerprint"></i>
+                        <p>Uma função simples para marcar ponto, com praticidade e controle diário.</p>
+                    </div>
+                    <div class="brainstorming-card glass-card">
+                        <i class="ph ph-sliders"></i>
+                        <p>Personalização da rotina de acordo com o perfil do usuário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Design -->
+        <section id="design" class="section design-section">
+            <div class="container">
+                <h2 class="section-title">UI Style</h2>
+
+                <div class="design-system-grid">
+                    <div class="ds-card colors-module">
+                        <div class="ds-header">
+                            <span class="ds-number">1</span>
+                            <h3>Cores</h3>
+                        </div>
+
+                        <div class="color-group">
+                            <h4>Cores da marca</h4>
+                            <div class="palettes-row">
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #2567E6;"></div>
+                                    <span>#2567E6</span>
+                                </div>
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #7182A0;"></div>
+                                    <span>#7182A0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="color-group">
+                            <h4>Cores do Estado</h4>
+                            <div class="palettes-row">
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #C20A0A;"></div>
+                                    <span>#C20A0A</span>
+                                </div>
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #2DA813;"></div>
+                                    <span>#2DA813</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="color-group">
+                            <h4>Cores do fundo</h4>
+                            <div class="palettes-row">
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #303030;"></div>
+                                    <span style="font-size: 0.7rem;">#303030<br>Dark</span>
+                                </div>
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #323232;"></div>
+                                    <span style="font-size: 0.7rem;">#323232<br>Medium</span>
+                                </div>
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #404040;"></div>
+                                    <span style="font-size: 0.7rem;">#404040<br>Light</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-group">
+                            <h4>Cores Secundarias<h4>
+                                    <div class="palettes-row">
+                                        <div class="palette-item">
+                                            <div class="color-cube" style="--c-hex: #d9d9d9;"></div>
+                                            <span style="font-size: 0.7rem;">#d9d9d9<br>Dark</span>
+                                        </div>
+                                        <div class="palette-item">
+                                            <div class="color-cube" style="--c-hex: #f2efeb;"></div>
+                                            <span style="font-size: 0.7rem;">#f2efeb<br>Medium</span>
+                                        </div>
+                                        <div class="palette-item">
+                                            <div class="color-cube" style="--c-hex: #f1f7ff;"></div>
+                                            <span style="font-size: 0.7rem;">#f1f7ff<br>Light</span>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="color-group">
+                            <div class="palettes-row">
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #1b52c4;"></div>
+                                    <span style="font-size: 0.7rem;">#1b52c4<br>Dark</span>
+                                </div>
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #135af3;"></div>
+                                    <span style="font-size: 0.7rem;">#135af3<br>Medium</span>
+                                </div>
+                                <div class="palette-item">
+                                    <div class="color-cube" style="--c-hex: #77b6e3;"></div>
+                                    <span style="font-size: 0.7rem;">#77b6e3<br>Light</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Módulo de Tipografia -->
+                    <div class="ds-card typography-module">
+                        <div class="ds-header">
+                            <span class="ds-number">2</span>
+                            <h3>Tipografia</h3>
+                        </div>
+
+                        <div class="type-families">
+                            <div class="type-row">
+                                <div class="font-name">Roboto</div>
+                                <div class="font-weight">Semibold</div>
+                            </div>
+                            <div class="type-row">
+                                <div class="font-name" style="font-family: 'Inter', sans-serif;">Inter</div>
+                                <div class="font-weight">Regular</div>
+                            </div>
+                        </div>
+
+                        <div class="type-specs">
+                            <div class="spec-row">
+                                <span>H1</span>
+                                <span>24 px - 32 px</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>H2</span>
+                                <span>16 px - 20 px</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Body Text</span>
+                                <span>16 px</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Line-height</span>
+                                <span>25 px</span>
+                            </div>
+                        </div>
+
+                        <div class="type-preview-bg">Aa</div>
+                    </div>
+
+                    <!-- Módulo de Botões -->
+                    <div class="ds-card buttons-module">
+                        <div class="ds-header">
+                            <span class="ds-number">3</span>
+                            <h3>Botões</h3>
+                        </div>
+
+                        <div class="buttons-showcase">
+                            <div class="ds-buttons-group">
+                                <p class="ds-sublabel">Padrão de Ações</p>
+                                <div class="btns-row">
+                                    <button class="ds-btn btn-green">Participar</button>
+                                    <button class="ds-btn btn-green">Salvar</button>
+                                    <button class="ds-btn btn-red">Cancelar</button>
+                                    <button class="ds-btn btn-blue-grey">Criar lembrete</button>
+                                </div>
+                            </div>
+
+                            <div class="ds-divider"></div>
+
+                            <div class="ds-buttons-group">
+                                <p class="ds-sublabel">Largura Total</p>
+                                <button class="ds-btn btn-green btn-full">Entrar na sala</button>
+                                <button class="ds-btn btn-green btn-full">Finalizar</button>
+                                <button class="ds-btn btn-red btn-full">Cancelar reunião</button>
+                            </div>
+
+                            <div class="ds-divider"></div>
+
+                            <div class="ds-buttons-group">
+                                <p class="ds-sublabel">Ações Secundarias</p>
+                                <button class="ds-btn btn-ghost"><i class="fa-solid fa-plus"></i> Adicionar
+                                    Reunião</button>
+                            </div>
+
+                            <div class="ds-divider"></div>
+
+                            <div class="ds-buttons-group">
+                                <p class="ds-sublabel">Mini-Ações</p>
+                                <div class="mini-actions">
+                                    <button class="ds-btn btn-green btn-small">Sim</button>
+                                    <button class="ds-btn btn-dark btn-small">Escolher cor</button>
+                                    <button class="ds-btn btn-red btn-small">Não</button>
+                                    <button class="ds-btn btn-grey btn-small icon-only">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Módulo de Iconografia -->
+                    <div class="ds-card icons-module">
+                        <div class="ds-header">
+                            <span class="ds-number">4</span>
+                            <h3>Iconografia</h3>
+                        </div>
+
+                        <p class="icon-set-label">Conjuntos de ícones <span>16 px</span></p>
+
+                        <div class="icons-grid">
+                            <div class="icon-wrapper">
+                                <i class="ph-fill ph-bell"></i>
+                                <span class="badge-notification">2</span>
+                            </div>
+                            <i class="ph-fill ph-user-circle"></i>
+                            <i class="ph-fill ph-house"></i>
+                            <i class="ph-fill ph-article"></i>
+                            <i class="ph ph-note-pencil"></i>
+
+                            <i class="ph ph-list"></i>
+                            <i class="ph-fill ph-plus-square"></i>
+                            <i class="ph-fill ph-toggle-left"></i>
+                            <i class="ph-fill ph-user-gear"></i>
+                            <i class="ph ph-x-square"></i>
+
+                            <i class="ph-fill ph-arrow-circle-left"></i>
+                            <i class="ph ph-plus-circle"></i>
+                            <i class="ph-fill ph-arrow-circle-right" style="color: #2567E6;"></i>
+                            <i class="ph-fill ph-clock"></i>
+                            <i class="ph ph-video-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de User Flow -->
+        <section id="user-flow" class="section user-flow-section">
+            <div class="container">
+                <h2 class="section-title">User Flow</h2>
+                <div class="user-flow-container animated-flow">
+                    <div class="flow-chart">
+                        <!-- Passo 1 -->
+                        <div class="flow-col">
+                            <div class="flow-node node-start">Home Sort</div>
+                        </div>
+
+                        <div class="flow-connector"><i class="ph ph-arrow-right"></i></div>
+
+                        <!-- Passo 2 -->
+                        <div class="flow-col">
+                            <div class="flow-node node-decision">Login / Cadastro</div>
+                        </div>
+
+                        <div class="flow-connector split-connector">
+                            <i class="ph ph-arrow-right"></i>
+                            <i class="ph ph-arrow-right"></i>
+
+                        </div>
+
+                        <!-- Passo 3 -->
+                        <div class="flow-col branch-col">
+                            <div class="branch-top">
+                                <div class="flow-node node-action-blue">Criar cadastro</div>
+                                <i class="ph ph-arrow-right"></i>
+                                <div class="flow-node node-action-yellow">Verificar</div>
+                                <i class="ph ph-arrow-right"></i>
+                                <div class="flow-node node-action-green">Registrar</div>
+                            </div>
+                            <div class="branch-bottom">
+                                <div class="flow-node node-action-blue">Login</div>
+                                <div class="long-arrow"></div>
+                            </div>
+                        </div>
+
+                        <div class="flow-connector merge-connector">
+                            <div class="line-top-in"></div>
+                            <div class="line-bottom-in"></div>
+                        </div>
+
+                        <!-- Passo 4 -->
+                        <div class="flow-col">
+                            <div class="flow-node node-pill">Dashboard</div>
+                        </div>
+
+                        <div class="flow-connector"><i class="ph ph-arrow-right"></i></div>
+
+                        <!-- Passo 5 -->
+                        <div class="flow-col features-col">
+                            <div class="flow-item">
+                                <i class="ph ph-arrow-right sm-arrow"></i>
+                                <div class="flow-node node-feature">Colaboração</div>
+                            </div>
+                            <div class="flow-item">
+                                <i class="ph ph-arrow-right sm-arrow"></i>
+                                <div class="flow-node node-feature-purple">Reuniões</div>
+                                <i class="ph ph-arrow-right"></i>
+                                <div class="flow-node node-action-yellow">Reuniões Marcadas</div>
+                                <div class="sub-branch">
+                                    <div class="sub-item"><i class="ph ph-arrow-right"></i>
+                                        <div class="flow-node node-feature">Entrar na reunião</div>
+                                    </div>
+                                    <div class="sub-item bottom"><i class="ph ph-arrow-right"></i>
+                                        <div class="flow-node node-feature">Adicionar reunião</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-item">
+                                <i class="ph ph-arrow-right sm-arrow"></i>
+                                <div class="flow-node node-feature">Sala virtual</div>
+                            </div>
+                            <div class="flow-item">
+                                <i class="ph ph-arrow-right sm-arrow"></i>
+                                <div class="flow-node node-feature">Projetos</div>
+                            </div>
+                            <div class="flow-item">
+                                <i class="ph ph-arrow-right sm-arrow"></i>
+                                <div class="flow-node node-feature">Agenda pessoal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Wireframes -->
+        <section id="wireframes" class="section wireframes-section">
+            <div class="container">
+                <h2 class="section-title">Wireframes</h2>
+                <div class="wireframes-grid">
+                    <div class="screen-mockup wireframe">
+                        <i><img src="img/wireframe-01.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup wireframe">
+                        <i><img src="img/wireframe-02.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup wireframe">
+                        <i><img src="img/wireframe-03.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup wireframe">
+                        <i><img src="img/wireframe-04.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup wireframe">
+                        <i><img src="img/wireframe-05.png" alt=""></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alta Fidelidade / UI -->
+        <section id="hifi" class="section hifi-section">
+            <div class="container">
+                <h2 class="section-title">Protótipo de alta fidelidade</h2>
+                <div class="mockup-showcase">
+                    <div class="screen-mockup main-screen">
+                        <i><img src="img/proto-01.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup">
+                        <i><img src="img/proto-02.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup">
+                        <i><img src="img/proto-03.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup">
+                        <i><img src="img/proto-04.png" alt=""></i>
+                    </div>
+                    <div class="screen-mockup">
+                        <i><img src="img/proto-05.png" alt=""></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resultados e Conclusão -->
+        <section id="results" class="section results-section">
+            <div class="container">
+                <h2 class="section-title">Resultados e Conclusões</h2>
+
+                <div class="usability-testing-section glass-card full-width-card">
+                    <div class="test-header">
+                        <h3><strong>Teste de usabilidade</strong> · Avaliação Heurística (Nielsen)</h3>
+                        <p class="section-description">Para validar a experiência do usuário no SORT, realizei uma
+                            avaliação heurística baseada nas Heurísticas de Usabilidade de Nielsen, analisando os
+                            principais fluxos do aplicativo, como organização de projetos, reuniões virtuais e marcação
+                            de ponto.</p>
+                    </div>
+
+                    <h4 class="test-subtitle">Principais pontos avaliados:</h4>
+                    <div class="heuristic-grid">
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-check-circle"></i></div>
+                            <div class="h-content">
+                                <strong>Feedback claro</strong>
+                                <p>Ao criar, concluir e editar projetos.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-chat-text"></i></div>
+                            <div class="h-content">
+                                <strong>Linguagem simples</strong>
+                                <p>Próxima do dia a dia do usuário.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-squares-four"></i></div>
+                            <div class="h-content">
+                                <strong>Consistência</strong>
+                                <p>Visual e comportamental entre telas.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-arrow-u-up-left"></i></div>
+                            <div class="h-content">
+                                <strong>Facilidade de correção</strong>
+                                <p>Simples para corrigir ou desfazer ações.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-aperture"></i></div>
+                            <div class="h-content">
+                                <strong>Interface minimalista</strong>
+                                <p>Reduzindo distrações e aumentando o foco.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-sort-ascending"></i></div>
+                            <div class="h-content">
+                                <strong>Hierarquia visual clara</strong>
+                                <p>Facilitando a leitura e priorização das tarefas.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-lightning"></i></div>
+                            <div class="h-content">
+                                <strong>Fluxos simples e objetivos</strong>
+                                <p>Reduzindo etapas desnecessárias.</p>
+                            </div>
+                        </div>
+                        <div class="heuristic-item">
+                            <div class="h-icon"><i class="ph ph-shield-check"></i></div>
+                            <div class="h-content">
+                                <strong>Estados de erro e sucesso</strong>
+                                <p>Aumentando a confiança do usuário.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="test-conclusion">
+                        <p>Com base nessa análise, realizei ajustes na hierarquia visual, rótulos e feedback das
+                            interações, tornando a experiência mais intuitiva e alinhada aos objetivos do produto.</p>
+                    </div>
+                </div>
+
+                <div class="results-grid">
+
+                    <div class="result-card">
+                        <div class="card-title">
+                            <i class="ph-fill ph-check-circle"></i>
+                            <h3>Redução do tempo de marcação de ponto</h3>
+                        </div>
+
+                        <div class="chart-area">
+                            <div class="bar-chart-wrapper">
+                                <div class="y-axis">
+                                    <span>20</span>
+                                    <span>15</span>
+                                    <span>10</span>
+                                    <span>5</span>
+                                    <span>0</span>
+                                </div>
+                                <div class="bars-container">
+                                    <div class="bar-group">
+                                        <div class="bar bar-blue" style="height: 90%;">
+                                            <span class="bar-value">18s</span>
+                                        </div>
+                                        <span class="bar-label">Antes</span>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar bar-purple" style="height: 45%;">
+                                            <span class="bar-value">9s</span>
+                                        </div>
+                                        <span class="bar-label">Depois</span>
+                                    </div>
+                                </div>
+                                <div class="chart-grid-lines">
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <p><strong>Meta:</strong> Reduzir o tempo médio de marcação em 50%</p>
+                            <p><strong>Métrica inicial:</strong> 18 segundos</p>
+                            <p><strong>Esperado após 1 semana de uso:</strong> 9 segundos</p>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="card-title">
+                            <i class="ph-fill ph-check-circle"></i>
+                            <h3>Aumento da percepção de bem-estar</h3>
+                        </div>
+
+                        <div class="chart-area centered">
+                            <div class="pie-chart-container">
+                                <div class="pie-chart"></div>
+                            </div>
+                            <div class="pie-legend">
+                                <div class="legend-item">
+                                    <span class="dot color-blue"></span>
+                                    <span>60% Relataram melhora significativa</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="dot color-teal"></span>
+                                    <span>30% Relataram leve melhora</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="dot color-pink"></span>
+                                    <span>10% Não perceberam diferença</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <p><strong>Meta:</strong> Melhorar a experiência emocional no trabalho remoto</p>
+                            <p><strong>Resultado esperado:</strong> +60% de usuários relatando bem-estar após 1
+                                semana</p>
+                        </div>
+                    </div>
+
+
+                    <div class="result-card">
+                        <div class="card-title">
+                            <i class="ph-fill ph-check-circle"></i>
+                            <h3>Tempo em Foco no Trabalho</h3>
+                        </div>
+
+                        <div class="chart-area line-chart-area">
+                            <div class="y-axis-title"></div>
+
+                            <div class="line-chart-wrapper">
+                                <div class="y-axis">
+                                    <span>60</span>
+                                    <span>50</span>
+                                    <span>40</span>
+                                    <span>30</span>
+                                    <span>20</span>
+                                    <span>10</span>
+                                </div>
+                                <div class="line-chart-container">
+
+                                    <div class="chart-grid">
+                                        <div class="grid-line horizontal" style="top: 0%;"></div>
+                                        <div class="grid-line horizontal" style="top: 20%;"></div>
+                                        <div class="grid-line horizontal" style="top: 40%;"></div>
+                                        <div class="grid-line horizontal" style="top: 60%;"></div>
+                                        <div class="grid-line horizontal" style="top: 80%;"></div>
+                                        <div class="grid-line horizontal" style="top: 100%;"></div>
+
+                                        <div class="grid-line vertical" style="left: 0%;"></div>
+                                        <div class="grid-line vertical" style="left: 20%;"></div>
+                                        <div class="grid-line vertical" style="left: 40%;"></div>
+                                        <div class="grid-line vertical" style="left: 60%;"></div>
+                                        <div class="grid-line vertical" style="left: 80%;"></div>
+                                        <div class="grid-line vertical" style="left: 100%;"></div>
+                                    </div>
+
+                                    <svg viewBox="0 0 100 100" class="line-graph-svg" preserveAspectRatio="none">
+                                        <polyline points="3,40 42,32" fill="none"
+                                            class="chart-line-path blue-segment" />
+
+                                        <polyline points="44,32 60,12 95,-4" fill="none"
+                                            class="chart-line-path green-segment" />
+
+                                        <circle cx="44" cy="32" r="3.5" class="chart-dot-center" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="line-legend">
+                                <div class="legend-item">
+                                    <span class="dot-square color-blue"></span>
+                                    <span>Antes do SORT → 42 min</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="dot-square color-green"></span>
+                                    <span>Depois do SORT → 68 min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <p><strong>Meta:</strong> Melhorar o foco produtivo</p>
+                            <p><strong>Resultado esperado:</strong></p>
+                            <p>Antes: Foco médio de 42 minutos</p>
+                            <p>Depois: Foco médio de 68 minutos</p>
+                            <p>Aumento de +60% no tempo de foco produtivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Principais Resultados Obtidos -->
+        <section id="key-results" class="section key-results-section">
+
+            <div class="key-results-bg"></div>
+
+            <div class="container relative-z">
+                <div class="key-results-layout">
+
+                    <div class="key-results-tree-col">
+
+                        <div class="tree-header-wrapper">
+                            <div class="tree-header-label">Principais resultados obtidos</div>
+                        </div>
+
+                        <div class="tree-content-wrapper">
+
+                            <div class="tree-vertical-line"></div>
+
+                            <div class="tree-card-item">
+                                <div class="tree-connector"></div>
+                                <div class="key-result-card">
+                                    <h3>Validação positiva com usuários</h3>
+                                    <p>Durante os testes, os usuários relataram sensação de maior controle sobre a
+                                        rotina, facilidade na organização de tarefas e melhora na gestão do tempo e
+                                        do foco.</p>
+                                </div>
+                            </div>
+
+                            <div class="tree-card-item">
+                                <div class="tree-connector"></div>
+                                <div class="key-result-card">
+                                    <h3>Nível de usabilidade elevado</h3>
+                                    <p>A interface foi considerada intuitiva e clara, com boa hierarquia visual e
+                                        navegação fluida, reduzindo a curva de aprendizado para novos usuários.</p>
+                                </div>
+                            </div>
+
+                            <div class="tree-card-item">
+                                <div class="tree-connector"></div>
+                                <div class="key-result-card">
+                                    <h3>Integração de recursos valorizada</h3>
+                                    <p>A centralização de foco, agenda, tarefas, mensagens e reuniões em um único
+                                        app foi apontada como um dos pontos mais fortes da solução.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-results-visual-col">
+                        <div class="hand-mockup-wrapper">
+                            <img src="img/mockup-hand-01.png" alt="App em uso">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Obrigado por ver!</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/marceloguedes-s/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.behance.net/marceloguedesuxui" target="_blank"
+                    rel="noopener noreferrer">Behance</a>
+                <a href="mailto:marceloguedes.s@hotmail.com" target="_blank" rel="noopener noreferrer">E-mail</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
